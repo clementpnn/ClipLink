@@ -1,0 +1,27 @@
+name: CI
+
+on: pull_request
+
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        task: ["lint", "type-check", "build"]
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run task
+        run: pnpm run ${{ matrix.task }}
