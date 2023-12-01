@@ -26,7 +26,7 @@ test.describe("Main page tests", () => {
     await page.fill("input[placeholder='https://example.com']", "https://www.google.fr/")
     await page.click("text=Send")
 
-    await expect(page.locator("text=Your link is here !!!")).toBeVisible()
+    await expect(page.locator("text=Your link is ready !!!")).toBeVisible()
     const linkText = await expect(page.locator("#link")).not.toBeEmpty()
     await expect(page.locator("#copy")).toBeVisible()
 
