@@ -1,4 +1,4 @@
-<a href="">
+<a href="https://clip-link.vercel.app/">
   <img alt="Novel is a Notion-style WYSIWYG editor with AI-powered autocompletions." src="./src/assets/images/cover.png">
   <h1 align="center">ClipLink</h1>
 </a>
@@ -16,7 +16,7 @@
 
 ## Introduction
 
-[ClipLink]() is a Bitly like link reducer.
+[ClipLink](https://clip-link.vercel.app/) is a Bitly like link reducer.
 
 https://github.com/clementpnn/ClipLink/assets/95907390/ecce1fd5-5eda-4e78-8fd6-79fbbd509289
 
