@@ -10,7 +10,9 @@ export default function LinkModal({ isOpen, setIsOpen, link }: LinkModalProps) {
           <DialogTitle>Your link is here !!!</DialogTitle>
           <DialogDescription>
             <div className="rounded-md border px-4 py-2 text-sm shadow-sm flex justify-between items-center">
-              {link}
+              <div className="inline-block" id="link">
+                {link}
+              </div>
               <CopyToClipboard link={link} />
             </div>
           </DialogDescription>
