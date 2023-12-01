@@ -18,8 +18,6 @@
 
 [ClipLink]() is a Bitly like link reducer.
 
-[![presentation](./src/assets/videos/presentation.mp4)](./src/assets/videos/presentation.mp4)
-
 <br />
 
 ## Setting Up Locally
@@ -53,3 +51,4 @@ Cliplink is built on the following stack:
 - [Canvas Confetti](https://www.kirilv.com/canvas-confetti/) - Animation canvas
 - [React Hook Form](https://react-hook-form.com/) - Forms management
 - [Zod](https://zod.dev/) - Schema validation
+
