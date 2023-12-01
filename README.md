@@ -18,7 +18,7 @@
 
 [ClipLink]() is a Bitly like link reducer.
 
-[![presentation](./src/assets/videos/presentation.mp4)](./src/assets/videos/presentation.mp4)
+[![presentation](https://github.com/clementpnn/recipe/raw/main/src/assets/videos/presentation.mp4)](https://github.com/clementpnn/recipe/raw/main/src/assets/videos/presentation.mp4)
 
 <br />
 
