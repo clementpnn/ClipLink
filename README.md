@@ -18,7 +18,7 @@
 
 [ClipLink]() is a Bitly like link reducer.
 
-https://github.com/clementpnn/ClipLink/assets/95907390/a79aca26-44d4-476d-acdd-1fd8a5e90553
+https://github.com/clementpnn/ClipLink/assets/95907390/ecce1fd5-5eda-4e78-8fd6-79fbbd509289
 
 <br />
 
