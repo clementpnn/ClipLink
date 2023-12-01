@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form"
 import z from "zod"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-// import useLinkService from "@/hooks/useLinkService"
+import useLinkService from "@/hooks/useLinkService"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { urlSchema } from "@/types/schema/urlSchema"
 import { Input } from "@/components/ui/input"
@@ -11,10 +11,10 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from "@/component
 import LinkModal from "@/components/modals/linkModal"
 import Spinner from "@/assets/icons/spinner.svg?react"
 
-// import { useToast } from "@/components/ui/useToast"
+import { useToast } from "@/components/ui/useToast"
 
 export default function LinkForm() {
-  // const { toast } = useToast()
+  const { toast } = useToast()
   const [isOpen, setIsOpen] = useState(false)
   const [link, setLink] = useState("")
 
@@ -26,26 +26,25 @@ export default function LinkForm() {
     }
   })
 
-  // const { mutate, data, isError, error, status } = useLinkService()
+  const { mutate, data, isError, error, status } = useLinkService()
 
-  // useEffect(() => {
-  //   if (status === "success") {
-  //     setLink(data?.link)
-  //     setIsOpen(true)
-  //   }
+  useEffect(() => {
+    if (status === "success") {
+      setLink(data?.link)
+      setIsOpen(true)
+    }
 
-  //   if (isError) {
-  //     toast({
-  //       variant: "destructive",
-  //       title: error.name,
-  //       description: error.message
-  //     })
-  //   }
-  // }, [status, data, isError, error, toast])
+    if (isError) {
+      toast({
+        variant: "destructive",
+        title: error.name,
+        description: error.message
+      })
+    }
+  }, [status, data, isError, error, toast])
 
   function onSubmit(values: z.infer<typeof urlSchema>) {
-    // mutate(values.link)
-    console.log(values.link)
+    mutate(values.link)
 
     form.reset()
   }
