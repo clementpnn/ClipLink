@@ -15,6 +15,7 @@ export default function CopyToClipboard({ link }: { link: string }) {
       }}
       disabled={isCopied}
       size="icon"
+      id="copy"
       className="h-[1.2rem] w-[1.2rem]"
     >
       <Copy />
