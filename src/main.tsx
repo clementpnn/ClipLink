@@ -3,7 +3,7 @@ import { RouterProvider } from "@tanstack/react-router"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 import router from "./routes/routes"
-import { ThemeProvider } from "@/components/themeProvider"
+import { ThemeProvider } from "@/provider/themeProvider"
 import "./styles/index.css"
 import MainContainer from "./components/containers/mainContainer"
 import { Toaster } from "@/components/ui/toaster"

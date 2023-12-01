@@ -1,7 +1,7 @@
 import { Moon, Sun } from "lucide-react"
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdownMenu"
-import { useTheme } from "@/components/themeProvider"
+import { useTheme } from "@/provider/themeProvider"
 import { Button } from "@/components/ui/button"
 
 export default function DarkMode() {
