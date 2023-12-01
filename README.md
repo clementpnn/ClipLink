@@ -27,7 +27,7 @@ https://github.com/clementpnn/ClipLink/assets/95907390/ecce1fd5-5eda-4e78-8fd6-7
 To set up Cliplink locally, you'll need to clone the repository and set up the following environment variables:
 
 - `VITE_TOKEN` – your Bitly API key (you can get one [here](https://bitly.com/a/sign_in?rd=/settings/api/))
-- `VITE_GROUP` – your Bitly grou_guid (follow [the documentation](https://dev.bitly.com/docs/getting-started/introduction/))
+- `VITE_GROUP` – your Bitly group_guid (follow [the documentation](https://dev.bitly.com/docs/getting-started/introduction/))
 
 To run the app locally, you can run the following commands:
 
