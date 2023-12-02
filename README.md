@@ -10,6 +10,7 @@
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#setting-up-locally"><strong>Setting Up Locally</strong></a> ·
+  <a href="#api-client"><strong>API Client</strong></a> .
   <a href="#tech-stack"><strong>Tech Stack</strong></a>
 </p>
 <br/>
@@ -36,6 +37,10 @@ pnpm i
 pnpm build
 pnpm dev
 ```
+
+## API Client
+
+To test API routes, you'll need to open the collections folder with [Bruno](https://www.usebruno.com/) and select the env environment then add your token in the environment variables
 
 ## Tech Stack
 
